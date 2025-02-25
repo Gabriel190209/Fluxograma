@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-25 04:25:39 "/>
+        <attribute name="created" value="QWx1bm87IERTTjkxNC1NSUNSTzctTDsgMjAyNS0wMi0yNTsgMDM6NTA6MTggOyAyNzE1"/>
+        <attribute name="edited" value="QWx1bm87IERTTjkxNC1NSUNSTzctTDsgMjAyNS0wMi0yNTsgMDQ6MjU6MzkgOyAyNzIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="Idade" type="Integer" array="False" size=""/>
+            <declare name="senha" type="String" array="False" size=""/>
+            <declare name="Email" type="String" array="False" size=""/>
+            <output expression="&quot;Informe seu email&quot;"/>
+            <input variable="Email"/>
+            <output expression="&quot;Informe seu nome&quot;"/>
+            <input variable="nome"/>
+            <output expression="&quot;informe sua idade&quot;"/>
+            <input variable="idade"/>
+            <if expression="idade &gt; 18">
+                <then/>
+                <else>
+                    <output expression="&quot;Idade menor de 18&quot;"/>
+                    <breakpoint/>
+                </else>
+            </if>
+            <output expression="&quot;Informe sua senha em caracteres&quot;"/>
+            <input variable="senha"/>
+            <if expression="Len(senha) &gt; 8">
+                <then>
+                    <output expression="&quot;cadastro feito&quot;"/>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <output expression="&quot;Sua senha tem menos de 8 caracteres, fa&#231;a outra senha&quot;"/>
+                    <input variable="senha"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
