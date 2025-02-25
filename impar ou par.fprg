@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-25 04:27:59 "/>
+        <attribute name="created" value="QWx1bm87IERTTjkxNC1NSUNSTzctTDsgMjAyNS0wMi0yNTsgMDE6NDQ6MjQgOyAyNzEz"/>
+        <attribute name="edited" value="QWx1bm87IERTTjkxNC1NSUNSTzctTDsgMjAyNS0wMi0yNTsgMDQ6Mjc6NTkgOyAyNzI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Valor" type="Integer" array="False" size=""/>
+            <input variable="Valor"/>
+            <if expression="Valor % 2 == 0">
+                <then>
+                    <output expression="&quot;Par&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot;Impar&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="In&#237;cio" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>
